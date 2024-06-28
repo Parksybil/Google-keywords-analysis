@@ -47,7 +47,9 @@ Both charts are plotted for Vietnam.
 
 
 
-Phân Tích Xu Hướng Google
+# Phân Tích Xu Hướng Google
+
+
 Script Python này lấy và vẽ dữ liệu xu hướng Google cho một từ khóa cụ thể trong một khoảng thời gian nhất định.
 
 Yêu Cầu
