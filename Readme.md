@@ -44,43 +44,50 @@ Both charts are plotted for Vietnam.
 - Related queries: The related queries are the queries that people also search for when they search for the keyword. A higher value means a higher correlation with the keyword.
 
 
+# Phân Tích Google Trends
 
+Script Python này lấy và vẽ biểu đồ dữ liệu Google Trends cho một từ khóa nhất định trong một khoảng thời gian đã chỉ định.
 
+## Yêu cầu
 
-# Phân Tích Xu Hướng Google
+- Python 3
+- pytrends
+- matplotlib
+- pandas
 
+## Cài đặt
 
-Script Python này lấy và vẽ dữ liệu xu hướng Google cho một từ khóa cụ thể trong một khoảng thời gian nhất định.
-
-Yêu Cầu
-Python 3
-pytrends
-matplotlib
-pandas
-Cài Đặt
-Trước khi chạy script, bạn cần cài đặt các gói Python cần thiết. Bạn có thể làm điều này bằng cách sử dụng pip:
+Trước khi chạy script, bạn cần cài đặt các gói Python cần thiết. Bạn có thể làm điều này bằng pip:
 
 bash
-Copy code
 pip install pytrends matplotlib pandas
-Sử Dụng
+
+
+
+## Sử dụng
+
 Để chạy script, sử dụng lệnh sau:
 
-bash
-Copy code
+
 python main.py
+
+
+
 Khi được nhắc, nhập từ khóa và số ngày cho khoảng thời gian.
 
-Script sau đó sẽ lấy dữ liệu xu hướng Google cho từ khóa trong số ngày được chỉ định và vẽ hai biểu đồ:
+Script sau đó sẽ lấy dữ liệu Google Trends cho từ khóa trong số ngày đã chỉ định và vẽ hai biểu đồ:
 
-Mối quan tâm theo thời gian cho từ khóa: Biểu đồ này cho thấy mối quan tâm đối với từ khóa đã thay đổi theo thời gian như thế nào. Trục x là ngày, và trục y là mức độ quan tâm.
+1. Sự quan tâm theo thời gian đối với từ khóa: Biểu đồ này cho thấy sự thay đổi của sự quan tâm đối với từ khóa theo thời gian. Trục x là ngày, và trục y là sự quan tâm.
 
-Các truy vấn liên quan cho từ khóa: Biểu đồ này cho thấy các truy vấn liên quan hàng đầu cho từ khóa. Trục y là các truy vấn liên quan, và trục x là giá trị của chúng.
+2. Các truy vấn liên quan đến từ khóa: Biểu đồ này cho thấy các truy vấn hàng đầu liên quan đến từ khóa. Trục y là các truy vấn liên quan, và trục x là giá trị của chúng.
 
 Cả hai biểu đồ đều được vẽ cho Việt Nam.
 
-Đọc Các Biểu Đồ
-Mối quan tâm theo thời gian: Giá trị cao hơn có nghĩa là mối quan tâm đối với từ khóa cao hơn. Nếu có các đỉnh trên biểu đồ, điều đó có nghĩa là có những thời điểm mà mối quan tâm đối với từ khóa đặc biệt cao.
+## Đọc Biểu Đồ
 
-Các truy vấn liên quan: Các truy vấn liên quan là những truy vấn mà người ta cũng tìm kiếm khi họ tìm kiếm từ khóa. Giá trị cao hơn có nghĩa là có sự tương quan cao hơn với từ khóa.
+- Sự quan tâm theo thời gian: Một giá trị cao hơn có nghĩa là sự quan tâm đối với từ khóa cao hơn. Nếu có các đỉnh trong biểu đồ, điều đó có nghĩa là có những thời điểm mà sự quan tâm đối với từ khóa đặc biệt cao.
+
+- Các truy vấn liên quan: Các truy vấn liên quan là những truy vấn mà mọi người cũng tìm kiếm khi họ tìm kiếm từ khóa. Một giá trị cao hơn có nghĩa là mối tương quan cao hơn với từ khóa.
+
+
 
